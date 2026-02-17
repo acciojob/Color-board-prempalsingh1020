@@ -1,46 +1,46 @@
 //your JS code here. If required.
 
+      let mainDIV = document.querySelector(".container");
 
-let mainDIV = document.querySelector(".container");
+      //  create 800 boxes;
 
-//  create 800 boxes;
+      let s= 800;  // no of the boxes
 
-let s= 800;  // no of the boxes
+      for(let i=1;i<=s;i++){
 
-for(let i=1;i<=s;i++){
+      	let square = document.createElement("div");
+      	square.classList.add("square");
+      	square.innerText = 1
 
-	let square = document.querySelector("div");
-	square.classList.add("square");
+      	square.addEventListener("mouseenter",()=>{
 
-	square.addEventListener("mouseeneter",()=>{
+      		let color = changeTOcolor()
+      		square.style.backgroundColor=color;
 
-		let color = changeTOcolor()
-		square.style.backgroundColor=color;
-		
-	});
+      	});
 
-	square.addEventListener("mouseleave",()=>{
-		
-		setTimeout(()={
+      	square.addEventListener("mouseleave",()=>{
 
-			square.style.backgroundColor=black;
-			
-		},1000);
-	})
+      		setTimeout(()=>{
 
-		mainDIV.appendChild(square);
+      			square.style.backgroundColor=black;
 
-	
-}
+      		},1000);
+      	})
 
-function changeTOcolor() {
-	let c = "0123456789ABCDFE";
-	let s = "#";
-	for(let i=0;i<6;i++){
-		s += c[Math.floor(Math.random()*16)];
-	}
-	return s;
-}
+      	mainDIV.append(square);
+
+
+      }
+
+      function changeTOcolor() {
+      	let c = "0123456789ABCDFE";
+      	let s = "#";
+      	for(let i=0;i<6;i++){
+      		s += c[Math.floor(Math.random()*16)];
+      	}
+      	return s;
+      }
 
 
 
