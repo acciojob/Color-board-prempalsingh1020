@@ -15,11 +15,10 @@ body {
   gap: 4px;
   width: 800px;
 }
-
 .square {
   width: 20px;
   height: 20px;
   background-color: pink;
- border:2px solid red;
- 
+  border: 2px solid red;
+  transition: background-color 1s ease; /* ✅ smooth effect */
 }
