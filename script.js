@@ -23,7 +23,7 @@
 
       		setTimeout(()=>{
 
-      			square.style.backgroundColor=black;
+      			square.style.backgroundColor="black";
 
       		},1000);
       	})
