@@ -1,24 +1,21 @@
-/*  your css code here. If applicable */
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background:wheat;
+  background: wheat;
   margin: 0;
-	/* border-radius:10px; */
 }
 
 .container {
   display: grid;
-  grid-template-columns: repeat(40, 1fr);
+  grid-template-columns: repeat(40, 20px);
   gap: 4px;
-  width: 800px;
 }
+
 .square {
   width: 20px;
   height: 20px;
   background-color: pink;
-  border: 2px solid red;
-  transition: background-color 1s ease; /* ✅ smooth effect */
+  transition: background-color 1s ease;
 }
